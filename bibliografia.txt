@@ -1,1 +1,2 @@
-- Chacon, S. and Straub, B. Pro Git. Access.
+-Scott Chacon and Ben Straub. Pro Git. Apress.
+-Ryan Hudson. Ry's Git Tutorial. Smashwords (2014)
