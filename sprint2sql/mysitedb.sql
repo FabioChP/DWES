@@ -74,7 +74,7 @@ CREATE TABLE `tJuegos` (
 LOCK TABLES `tJuegos` WRITE;
 /*!40000 ALTER TABLE `tJuegos` DISABLE KEYS */;
 INSERT INTO `tJuegos` VALUES
-(1,'Cult of the Lamb','https://swapcloudgames.com/cdn/shop/products/8b02d9e943fb8ac8b087a8b35d698621.png?v=1659717491','Rogue-lite',22.99),
+(1,'Cult of the Lamb','https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_CultOfTheLamb.jpg','Rogue-lite',22.99),
 (2,'Stardew Valley','https://cdn.akamai.steamstatic.com/steam/apps/413150/capsule_616x353.jpg?t=1666917466','Farming',13.99),
 (3,'Project Zomboid','https://cdn.cloudflare.steamstatic.com/steam/apps/108600/header.jpg?t=1691508011','Survival',19.99),
 (4,'Gunfire Reborn','https://hb.imgix.net/31c713cdf768a1267714a628a387398312e516f7.jpg?auto=compress,format&fit=crop&h=353&w=616&s=974264c0e87bc9f43429f64dd015964d','Rogue-lite',16.79),
@@ -123,4 +123,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-16 16:08:20
+-- Dump completed on 2023-10-18 13:40:41
