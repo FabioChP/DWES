@@ -21,6 +21,10 @@
 			img {
 				width: 250px;
 			}
+            span {
+                font-size: 0.7rem;
+                color: grey;
+            }
 		</style>
 	</head>
     <body>
@@ -40,7 +44,7 @@
             $result = mysqli_query($db, $query) or die('Query error');
             $row = mysqli_fetch_array($result);
             echo '<tr>';
-                echo '<td><a href="/detail.php?id='.$row[0].'">'.$row[1].'</a></td>';
+                echo '<td>'.$row[1].'</td>';
                 echo '<td><img src="'.$row[2].'"></img></td>';
                 echo '<td>'.$row[3].'</td>';
                 echo '<td>'.$row[4].'€</td>';
@@ -53,7 +57,7 @@
                 $query2 = 'SELECT * FROM tComentarios WHERE juego_id='.$id;
                 $result2 = mysqli_query($db, $query2) or die('Query error');
                 while ($row = mysqli_fetch_array($result2)) {
-                    echo '<li>'.$row[1].'</li>';
+                    echo '<li>'.$row[1].'   <span>('.$row['fecha'].')</span></li>';
                 }
                 mysqli_close($db);
             ?>
