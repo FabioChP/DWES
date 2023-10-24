@@ -3,7 +3,6 @@
 ?>
 <html>
     <body>
-        <p>prueba</p>
         <?php
             $id = $_POST['id']; // Guarda la id mandada con el formulario en una variable .
             $comentario = $_POST['new_comment']; // Guarda el comentario mandada con el formulario en otra variable.
