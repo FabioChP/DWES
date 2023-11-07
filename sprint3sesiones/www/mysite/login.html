@@ -2,10 +2,30 @@
 <html>
 <head>
     <title>Log In</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("login_form").addEventListener('submit', validateForm);
+        });
+
+        function validateForm(event) {
+            event.preventDefault();
+            let mail = document.getElementById('mail').value;
+            if (mail.length == 0) {
+                alert('Introduce un correo');
+                return;
+            }
+            let passw = document.getElementById('pass').value;
+            if (passw.length == 0) {
+                alert('Introduce una contrasena');
+                return;
+            }
+            this.submit();
+        }
+    </script>
 </head>
 <body>
     <h3>LOGIN</h3>
-    <form action="/login.php" method="post">
+    <form action="/login.php" method="post" id="login_form">
         <label for="mail">Email :</label>
         <input type="text" name="mail" id="mail"><br>
         <label for="pass">Contrasena :</label>
