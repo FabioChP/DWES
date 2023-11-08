@@ -9,6 +9,7 @@
             $mail = $_POST['mail'];
             $passwd1 = $_POST['passwd1'];
             $passwd2 = $_POST['passwd2'];
+            if (empty($nombre) || empty($apellidos) || empty($mail) || empty($passwd1) || empty($passwd2)) {die('Hay un campo vacio');}
             if ($passwd1 != $passwd2 ) { die('Contraseñas distintas'); }
             $password = password_hash($passwd1,PASSWORD_DEFAULT);
             $query2 = 'SELECT email FROM tUsuarios';
