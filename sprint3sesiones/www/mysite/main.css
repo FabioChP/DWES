@@ -1,0 +1,50 @@
+th {
+    background-color: lightgreen;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    width: 40%;
+    text-align: center;
+    border-collapse: collapse;
+}
+caption {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+td {
+    opacity: 0.5;
+    background-color: initial;
+    transition: all 0.5s ease-in-out ;
+    
+}
+
+tr:hover td{
+    opacity: 1;
+    background-color: lightblue;
+}
+
+tr:hover td:first-child{
+    opacity: 1;
+    background-color: lightpink;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    transition: all 0.5s ease-in-out;
+}
+
+tr:hover img {
+    width: 350px;
+    height: 210px;
+}
+
+body > a {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
