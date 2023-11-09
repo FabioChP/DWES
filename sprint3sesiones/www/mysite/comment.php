@@ -15,7 +15,7 @@
             $currentDate = $currentDateTime->format('Ymd'); // Esta linea formatea la fecha para que se vea (yyyymmdd - 2023-10-23)
 
             $query = $db -> prepare("INSERT INTO tComentarios(comentario, usuario_id, juego_id, fecha) VALUES (?,?,?,?)");
-            $query -> bind_param("sis",$comentario,$user_id,$id,$currentDate);
+            $query -> bind_param("siis",$comentario,$user_id,$id,$currentDate);
             $query -> execute();
 
             echo "<p>Nuevo comentario ";
