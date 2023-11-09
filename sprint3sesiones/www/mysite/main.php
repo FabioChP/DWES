@@ -3,26 +3,7 @@
 ?>
 <html>
 	<head>
-		<style> /* HOJA DE ESTILOS INTERNA */
-			th {
-				background-color: lightgreen;
-			}
-			td {
-				text-align: center;
-			}
-			table {
-				width: 40%;
-				text-align: center;
-				border-collapse: collapse;
-			}
-			caption {
-				font-size: 20pt;
-				font-weight: bold;
-			}
-			img {
-				width: 250px;
-			}
-		</style>
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<table border= "2px solid black" text-align="center">
@@ -47,5 +28,10 @@
 				mysqli_close($db); // Cerramos la conexión entre PHP y la base de datos
 			?>
 		</table>
+		<br>
+		<a href="/register.html">Register</a>
+			<a href="/login.html">Log In</a>
+			<a href="/logout.php">Log Out</a>
+			<a href="/chngpasswd.html">Change Password</a>
 	</body>
 </html>
