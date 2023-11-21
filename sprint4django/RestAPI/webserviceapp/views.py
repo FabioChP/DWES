@@ -16,7 +16,9 @@ def devolver_juegos(request):
         diccionario = {}
         diccionario['id'] = fila_sql.id
         diccionario['nombre'] = fila_sql.nombre
+        diccionario['url_imagen'] = fila_sql.url_imagen
         diccionario['genero'] = fila_sql.genero
+        diccionario['precio'] = fila_sql.precio
         respuesta_final.append(diccionario)
     return JsonResponse(respuesta_final, safe=False)
 
@@ -32,7 +34,9 @@ def devolver_juegos_por_id(request, id_solicitado):
     resultado = {
         'id': juego.id,
         'nombre': juego.nombre,
+        'url_imagen': juego.url_imagen,
         'genero': juego.genero,
+        'precio': juego.precio,
         'comentarios': lista_comentarios
     }
     return JsonResponse(resultado, json_dumps_params={'ensure_ascii': False})
